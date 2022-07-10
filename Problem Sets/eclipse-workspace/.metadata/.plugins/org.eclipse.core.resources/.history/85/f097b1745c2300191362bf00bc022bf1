@@ -1,0 +1,27 @@
+
+public class MyMethods {
+	
+	public static void printDecreasing(String s) {
+		for (int i = s.length(); i >= 0; i--) {
+			System.out.println(s.substring(0,i));
+		}
+	}
+	
+	public static String firstAndLast(String str) {
+		String newStr = "";
+		if (str.length() == 1) {
+			newStr = str;
+			return newStr;
+		}
+		else {
+			newStr = str.substring(0,1) + str.substring(str.length()-1);
+			return newStr;
+		}
+	}
+
+	public static void main(String[] args) {
+		printDecreasing("method");
+		System.out.println(firstAndLast("a"));
+	}
+
+}

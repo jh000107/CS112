@@ -1,0 +1,28 @@
+1. What is the height of this tree?
+
+- The height of this tree is 3.
+
+2. How many leaf nodes does it have? How many interior nodes?
+
+- It has 4 leaf nodes
+- It has 5 interior nodes
+
+3. If a preorder traversal were used to print the keys, what would the output be?
+
+- 21, 18, 7, 25, 19, 27, 30, 26, 35
+
+4. What would be the output of a postorder traversal?
+
+- 7, 19, 25, 18, 26, 35, 30, 27, 21
+
+5. What would be the output of a level-order traversal?
+
+- 21, 18, 27, 7, 25, 30, 19, 26, 35
+
+6. Is this tree a search tree? Explain briefly why or why not.
+
+- This is not a search tree because if this was a search tree, then 25 should be located in the right subtree of 21.
+
+7. Is this tree balanced? Explain briefly why or why not.
+
+- This tree is balanced since the node's subtrees have the same height or height differ by 1.

@@ -1,0 +1,18 @@
+1. Node A of the tree is in position 50 of the array. What are the indices of A’s left child, right child, and parent? Explain how you got your answers.
+
+Index of A's left child: 2*50+1 = 101
+Index of A's right child: 2*50+2 = 102
+Index of A's parent: (50-1)/2 = 24
+
+2. What is the height of the tree? Explain your answer briefly.
+Height of the tree would be log base 2 200 = 7.64... = 7.
+Or we could simply write out 1,2,4,8,16,32,62,128,... so will be in height of 7.
+
+3. The bottom level of the tree contains some number of leaf nodes. Is the rightmost leaf node in the bottom level the left child of its parent or the right child of its parent? Explain your answer briefly.
+
+Rightmost leaf node in the bottom level is the last 'element' in the array. Therefore, since there are 200 nodes in the tree, the position of the rightmost leaf node is 199.
+(199-1)/2 is the position of rightmost leaf node's parent node, which is 99. 99*2+1 = 199. Therefore, it is left child.
+
+4. In Problem 6, you will implement a method that determines if the complete tree corresponding to an array of values is a heap. What is the efficiency of determining if an array of length n represents a heap in the best case? In the worst case? Use big-O notation, and explain your answers briefly.
+
+Checking if the array of length n represents a heap requires us to visit all all the parent nodes. The best case would be the case when there is only one node, representing the root of the entire tree O(1). The worst case would be the case when all the parent nodes of the bottom level (which are all leaf nodes) have 2 children filled O(n). In the worst case, O(n) since all the parent nodes have to be visited. 

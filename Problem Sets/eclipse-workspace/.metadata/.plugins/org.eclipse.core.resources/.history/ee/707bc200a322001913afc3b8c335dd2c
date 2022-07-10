@@ -1,0 +1,23 @@
+
+public class test1 {
+
+	public static void doSomething(int a) {
+        int b = 5;
+
+        for (int i = 1; i <= 5; i++) {
+            int c = 2;
+            for (int j = 0; j < 3; j++) {
+                int d = 4;
+            }
+        }
+           // fourth println
+    }
+
+    public static void main(String[] args) {
+        int x = 5;
+
+        int y = 2;
+        doSomething(x);
+        System.out.println(a);            // sixth println
+    }
+}

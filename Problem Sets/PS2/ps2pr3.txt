@@ -1,0 +1,17 @@
+1.
+
+twoD[1][2] = 12;
+
+
+2.
+
+for (int r = 0; r < twoD.length; r++) {
+			System.out.println(twoD[r][0]);
+		}
+
+
+3.
+
+for (int r = twoD.length-1; r >= 0; r--) {
+			System.out.println(twoD[r][twoD[0].length-1-r]);
+		}

@@ -1,0 +1,38 @@
+1.
+
+public static void remAllStack(Stack<Object> stack, Object item) {
+		Stack<Object> newStack = new LLStack<Object>();
+		while (!(stack.isEmpty())) {
+			if (!(stack.peek().equals(item))) {
+				Object kept = stack.pop();
+				newStack.push(kept);
+			}
+			else {
+				stack.pop();
+			}
+		}
+		while(newStack.isEmpty() == false){
+			Object toAdd = newStack.pop();
+			stack.push(toAdd);
+		}
+	}
+
+
+2.
+
+public static void remAllQueue(Queue<Object> queue, Object item) {
+		Queue<Object> newQueue = new LLQueue<Object>();
+		while (!(queue.isEmpty())) {
+			if (!(queue.peek().equals(item))) {
+				newQueue.insert(queue.remove());
+			}
+			else {
+				queue.remove();
+			}
+		}
+		
+		while(!(newQueue.isEmpty())) {
+			queue.insert(newQueue.remove());
+		}
+		
+	}

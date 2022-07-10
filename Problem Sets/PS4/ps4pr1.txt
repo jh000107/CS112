@@ -1,0 +1,23 @@
+1:			        (1)foo(5,3)
+                                /          \
+                               /            \
+                              /              \
+			(2)foo(4,2)	  (7)foo(4,4)
+			    /	\	    return 4
+			   /     \
+			  /       \
+		  (3)foo(3,1)  (6)foo(3,3)
+			/   \     return 3
+		       /     \
+                      /       \
+	      (4)foo(2,0)   (5)foo(2,2)
+	        return 2       return 2
+
+
+call 4 foo(2,0) returns 2
+call 5 foo(2,2) returns 2
+call 3 foo(3,1) returns 4
+call 6 foo(3,3) returns 3
+call 2 foo(4,2) returns 7
+call 7 foo(4,4) returns 4
+call 1 foo(5,3) returns 11

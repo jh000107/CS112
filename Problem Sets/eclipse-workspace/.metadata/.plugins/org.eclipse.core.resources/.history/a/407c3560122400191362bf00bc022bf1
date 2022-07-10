@@ -1,0 +1,13 @@
+
+public class test1 {
+    public static void main(String[] args) {
+    	String str1 = "A method";
+    	String str2 = "to my MADNESS";
+    	System.out.println(str2+" "+str1.toLowerCase());
+    	System.out.println(str1.charAt(5));
+    	System.out.println(str1.substring(3,7) + str2.toLowerCase().charAt(11));
+    	System.out.println(str2.toUpperCase().charAt(4) + str2.substring(10,12));
+    	System.out.println(str2.indexOf('E'));
+    	System.out.println(str2.replace('M', 'B'));
+    }
+}

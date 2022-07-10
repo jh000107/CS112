@@ -1,0 +1,25 @@
+1.
+
+f(n) = (n(n+1))/2
+
+
+2.
+
+O(n^2) since the greatest exponent of an expression is n^2.
+
+3.
+
+public static void generateSumsFaster(int n) {
+	int sum = 0;
+	while(n>0){
+		sum += n;
+		n--;
+	}
+	return sum;
+}
+	
+
+4.
+
+O(n) since the while loop iterates just for n times.
+

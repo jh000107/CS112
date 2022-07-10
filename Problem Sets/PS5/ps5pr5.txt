@@ -1,0 +1,14 @@
+1.
+
+b(n) = O(n^2)
+c(n) = O(n)
+d(n) = O(log(n))
+e(n) = O(n)
+
+2.
+
+O(n^3)
+
+3.
+
+O(nlogbase2(n))

@@ -1,0 +1,38 @@
+1.
+
+0: ant
+1: flea
+2: bat
+3: cat
+4: goat
+5: dog
+6: bird
+7: bison
+
+The last key, which is duck, causes overflow.
+
+2.
+
+0: 
+1: 
+2: 
+3: cat
+4: goat
+5: bird
+6: bison
+7: dog
+
+the ant key causes overflow.
+
+3.
+
+0: ant
+1: bat
+2: flea
+3: cat
+4: goat
+5: bison
+6: bird
+7: dog
+
+The last key, which is duck, causes overflow.

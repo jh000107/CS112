@@ -1,0 +1,11 @@
+1.
+
+Since I seldom add or remove items from the list, I do not really have to think about the efficiency of adding or removing items. However, I frequently a product's record, so I need to get a specific position of an item so that I could change the number of products. Therefore, I need to think about the time and space efficiency of getting specific positions. Since ArrayList takes only O(1) and LLList takes O(n), it would be better for me to use ArrayList. LLList has to traverse through the list, whereas ArrayList can just get the position. Furthermore, since the size of the list does not change that much (seldom add or remove), it would not affect that much for using the ArrayList.
+
+2.
+
+In this case, it would be better for me to use LLList. Since the size is unpredictable every week, it is better to use LLList so that we could make a space when there is a new tweet. Also, because I need to frequently display the tweets in reverse chronological order, I just have to add a new tweet before the first node (after the dummy), which can be easily done by updating the head reference (O(1)). 
+
+3.
+
+In this problem, it says that the number of events is fairly consistent from month to month. This implies that the size of the entire list does not change that much. Therefore, space efficiency is not a key to determine either LLList or ArrayList. However, this time, it is in chronological order. Therefore, new events are added to the end of the list. In this case, no shifting is needed, which is good for ArrayList O(1). For LLList, you have to traverse through the entire list, which takes O(n). 

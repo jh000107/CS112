@@ -1,0 +1,21 @@
+1. What is the big-O time efficiency of Algorithm A in the best, average, and worst cases? Explain your answer briefly. (You do not need to implement either algorithm. We just want you to analyze them.)
+
+Best: O(n)
+Average: O(n)
+Worst: O(n)
+
+Best, average, and worst are all O(n) because Algorithm A has to go through the whole array no matter what. So it has to go through the array n times once and keep the largest.
+
+
+
+2. What is the big-O time efficiency of Algorithm B in the best, average, and worst cases? Explain your answer briefly.
+
+Best: O(nlog(n))
+Average: O(nlog(n))
+Worst: O(nlog(n))
+
+Best, average, and worst are O(nlog(n)) because that is what it takes for mergesort. Once the array is sorted, it could just return the last index of the array, which takes O(1). 1 * nlog(n) = nlog(n).
+
+3. Which algorithm is faster? Explain briefly.
+
+Algorithm A is faster than Algorithm B because it simply takes less time to compute in terms of time efficiency. O(n) is faster than O(nlogn). n < nlog(n).

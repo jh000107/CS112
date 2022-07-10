@@ -1,0 +1,12 @@
+
+public class test1 {
+	public static double discountPrice(double originalPrice, int percentDiscount) {
+        double newPrice = originalPrice - (percentDiscount / 100 * originalPrice);
+        System.out.println(newPrice);
+        return newPrice;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(discountPrice(50.0, 10));
+    }
+}

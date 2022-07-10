@@ -1,0 +1,42 @@
+/*
+ * Problem Set 1
+ *
+ * Practice with static methods, part I
+ *
+ * Note: Because this class is simply a collection of static methods 
+ * and it does not have a main method, you cannot run it.
+ * See the problem set for instructions about how to test the methods 
+ * that you write.
+ */
+
+public class Methods {
+    /*
+     * printVertical - takes a string s and prints the characters of 
+     * the string vertically -- with one character per line.
+     */
+    public static void printVertical(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            System.out.println(c);
+        }
+    }
+    
+    public static void printWithSpaces(String s) {
+    	for (int i = 0; i < s.length(); i++) {
+    		char c = s.charAt(i);
+    		System.out.print(c + " ");
+    	}
+    }
+    
+    public static char middleChar(String s) {
+    	int midIndex = (s.length()-1)/2;
+    	return s.charAt(midIndex);
+    }
+    
+    public static void main(String[] args) {
+    	printVertical("jesus");
+    	printWithSpaces("jesus");
+    	System.out.println();
+    	System.out.println(middleChar("mo"));
+    }
+}

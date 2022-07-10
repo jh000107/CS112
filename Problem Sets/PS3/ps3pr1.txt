@@ -1,0 +1,49 @@
+1. The information above states that the Gee class has its own toString() method that overrides the inherited one. Where does the toString() method that Gee overrides come from? Be as specific as possible, and explain your answer briefly.
+
+The toString() method that Gee overrides come from the Object class. Every class, even the ones that we create for ourselves, inherit this toString() method from the Object Class. We call this Inheritance. Unless we override the toString() method, classes have default setting of Object class' toString() method.
+
+2.  List all of the fields in a Tee object – both the ones that it declares and the ones (if any) that it inherits.
+
+Only a String field called bar since inherited fields are encapsulated.
+
+
+3. 
+|                            | will the call | if the call compiles,   
+  which print | which method | compile       | which version of the    
+  statement   | is called    | (yes/no)?     | method will be called?  
+=======================================================================
+| first one   | equals()     | yes           | the Tee version        |
++-------------+--------------+---------------+------------------------+
+| second one  | foo()        | yes           | the Gee version        |
++-------------+--------------+---------------+------------------------+
+| third one   | toString()   | yes           | the Yee version        |
++-------------+--------------+---------------+------------------------+
+| fourth one  | moo()        | no            |                        |
++-------------+--------------+---------------+------------------------+
+
+4.
+
+public int yow(){
+	int sum = this.getX() + this.getY() + this.getZ();
+	return sum;
+}
+
+5.
+
+a) Yee y = new Tee();
+
+This would work. Polymorphism is often used when a parent class reference is used to refer to a child class object. Since Yee is a superclass of Tee, an object of type Tee can be assigned to a variable of type Yee.
+
+b) Zee z = new Gee();
+
+This would not work since Zee is a subclass of Gee. Thinking of the class Hierarchy, it cannot climb back up.
+
+c) Tee t = new Zee();
+
+This would not work since Zee is not a subclass of Zee. Even though it flips to
+Zee t = new Tee();
+it would not work since Tee is extending only from Yee and Gee.
+
+d) Gee g = new Tee();
+
+This would work because Gee is a superclass of Tee. Same logic with (a).

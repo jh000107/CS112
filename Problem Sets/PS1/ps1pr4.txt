@@ -1,0 +1,17 @@
+1. Which of these variables could be printed by the first println statement?
+only variable a could be printed by the first println statement.
+
+2. Which of them could be printed by the second println statement?
+a, b, c, d, i, and j could be printed by the second println statement.
+
+3. Which of them could be printed by the third println statement?
+a, b, c, and i could be printed by the third println statement.
+
+4. Which of them could be printed by the fourth println statement?
+a and b could be printed by the fourth println statement.
+
+5. Which of them could be printed by the fifth println statement?
+only x could be printed by the fifth println statement.
+
+6. Which of them could be printed by the sixth println statement?
+x and y could be printed by the sixth println statement.

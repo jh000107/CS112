@@ -1,0 +1,11 @@
+package lab1;
+
+public class testClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println((Debugging.triArea(10,3)));
+
+	}
+
+}

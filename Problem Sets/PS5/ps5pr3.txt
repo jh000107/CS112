@@ -1,0 +1,30 @@
+1.
+
+expression         address       value
+------------------ ------------- -----------
+x                  0x128	 0x840             
+x.ch               0x840	 'h'              
+y.prev             0x326	 0x400              
+y.next.prev        0x666	 0x320             
+y.prev.next        0x402	 0x320               
+y.prev.next.next   0x322	 null
+
+2.
+
+x.next = y
+x.prev = y.prev
+y.prev = x
+y.prev.next = x
+
+3.
+
+public static DNode initNexts(DNode lastNode){
+	lastNode.next = null;
+	DNode trav = lastNode;
+	while (trav.prev != null){
+		lastNode.prev.next = lastNode;
+		trav = trav.prev;
+	}
+	return trav;
+}
+

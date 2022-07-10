@@ -1,0 +1,31 @@
+1.
+
+The worst-case running time of this algorithm as a function is
+O(m^2 * n^3) because the worst case for the first loop is O(m^2) and the worst case
+for the second loop is O(n^2) and worst case for adding an item is O(n).
+If you multiply all those worst cases, it taks O(m^2 * n^3).
+Each of those loops are squared for the worst cases because worst case for getting an item is either O(m) or O(n) and it has to traverse through the linked list m or n times.
+
+2.
+
+public static LLList intersect(LLList list1, LLList list2) {
+		LLList inters = new LLList();
+		ListIterator iterator1 = list1.iterator();
+		ListIterator iterator2 = list2.iterator();
+		
+		while(iterator1.hasNext()) {
+			Object item1 = iterator1.next();
+			iterator2 = list2.iterator();
+			while(iterator2.hasNext()) {
+				Object item2 = iterator2.next();
+				if (item2.equals(item1)) {
+					inters.addItem(item2, inters.length());
+				}
+			}
+		}
+		return inters;
+}
+
+3.
+
+Since this method uses an Iterator rather than getting nodes, we don't have to think about the worst cases for getting nodes. Therefore, O(mn^2).

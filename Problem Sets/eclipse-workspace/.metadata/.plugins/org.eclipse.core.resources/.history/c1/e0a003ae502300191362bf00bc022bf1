@@ -1,0 +1,15 @@
+
+public class MyMethods {
+	
+	public static void printDecreasing(String s) {
+		for (int i = s.length(); i >= 0; i--) {
+			System.out.println(s.substring(0,i));
+		}
+	}
+
+	public static void main(String[] args) {
+		printDecreasing("method");
+
+	}
+
+}

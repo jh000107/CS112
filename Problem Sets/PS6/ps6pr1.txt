@@ -1,0 +1,36 @@
+1. What is the space efficiency of each implementation?
+The space efficiency of using an array: O(m+1) = O(m).
+If we use an array, since the position in the array determines the exponent, an array needs to have 0 to m slots in order to store the exponents. 
+
+The space efficiency of using a linked list: O(t).
+We need a node for each term. Therefore, we need space for the number of terms in an expression.
+
+2. What is the time efficiency of changing the coefficient of a term (e.g., changing the coefficient of the x3 term in the third polynomial from 4 to 10) in each implementation in the best, average, and worst cases?
+
+using an array:
+Since it is not the matter of adding or deleting the terms, it takes O(1) move to change the coefficient of a term.
+best: O(1)
+worst: O(1)
+average: O(1)
+
+using a linked list:
+best: changing the coefficient of the first term in the list. O(1)
+worst: changing the coefficient of the last term in the list. O(t)
+average: O(t/2) = O(t)
+
+3. What is the time efficiency of evaluating a polynomial in each implementation in the best, average, and worst cases? Important: You should assume that both implementations use a helper method that takes O(n) steps to compute x to the nth power.
+
+Using an array:
+best: there is only one term and its exponent is 0. Since it does not have to compute
+x to the nth power, it can simply return its value. O(1)
+worst: All of the terms are filled from 0 to m exponent. In this case, it has to go through the entire list, calculating x to the nth power for every term. O(mn)
+average: O(mn)
+
+Using a linked list:
+best: A linked list always have to traverse through the list, the best case would be O(t) because even if there is only one term and its exponent is 0, it is going through the list and does not compute x to the nth power.
+worst: O(tn) since it has to traverse through the linked list and compute x to the nth power.
+average: O(tn)
+
+4. Describe a situation in which one of the two representations would clearly be more efficient than the other one.
+
+In terms of a space efficiency, using a linked list would be a lot more efficient when there is a huge gap between exponents, for example, 9 + x + 67x^280. Using a linked list uses the space depending on the number of terms, which in this case, is 3, but using an array would have to create a lot more space depending on the maximum exponent. In addition, if there is a huge gap between exponents, time efficiency also comes into play since for both of the implementations, they have to go through the entire list. In this case, it would be much more efficient to use a linked list implementation.
